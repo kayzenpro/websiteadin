@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: black center center no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes transparant {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bottom {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.navbar{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-logo h1{
+    font-size: 35px;
+    color: rgb(255, 0, 0);
+}
+
+.navbar .navbar-logo .tec{
+    color: white;
+    font-size: 20px;
+
+}
+ 
+.content{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 330px;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.content h1{
+    animation: top 1.5s ease-out forwards;
+    font-size: 70px;
+
+}
+
+h6{
+    animation: bottom 1.5s ease-out forwards;
+}
+
+.button{
+    animation: transparant 1.5s ease-out forwards;
+    padding-left: 450px;
+    padding-top: 300px;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.button .home{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.button .streaming{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.button .subscription{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
